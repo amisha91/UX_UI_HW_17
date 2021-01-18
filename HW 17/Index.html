@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+<title>About me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #E3D7D4;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #632425;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; 
+  background: #E3D7D4;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #632425;
+  padding: 10px;
+  text-align: center;
+  color: #E3D7D4;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #E3D7D4;
+}
+
+.topnav a {
+  float: left;
+  color: #632425;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #C0B4AC;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #AD856A;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">About Me</a>
+  <a href="#news">Skills</a>
+  <a href="#contact">Work</a>
+  <a href="#about">Contact</a>
+</div>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  
+  <article>
+    <h1>About Me</h1>
+    <p>Hi. My Name is Amisha Patel.</p>
+    <p>I am passionate about bringing technology into the classroom and in the hands of every student. As a former teacher I understand the unique challenges schools face in going from an analog to digital classroom settings. I enjoy analyzing research data to find gaps and problem solve. My skills include implementing frameworks such as Scrum to achieve goals, UX research, and prototyping.
+    <p>The ideal client would be an education technology company with the mission to create a product that can be seamless integration within classroom across the country.</p>
+</p>
+  </article>
+</section>
+
+<footer>
+  <p>amisha91@gmail.com</p>
+</footer>
+
+</body>
+</html>
