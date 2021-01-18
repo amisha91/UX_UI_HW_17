@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
 <html lang="en">
 <head>
 <title>About me</title>
@@ -30,25 +31,32 @@ nav {
   background: #E3D7D4;
   padding: 20px;
 }
+
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0
-
 }
 
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
 
-
+/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-
+/* Style the footer */
 footer {
   background-color: #632425;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: #E3D7D4;
 }
@@ -56,7 +64,7 @@ footer {
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
-    width: 300%;
+    width: 100%;
     height: auto;
   }
 }
@@ -101,57 +109,32 @@ body {
 <div class="topnav">
   <a class="active" href="#home">About Me</a>
   <a href="#news">Skills</a>
-  <a href="#about">Work</a>
+  <a href="#contact">Work</a>
   <a href="#about">Contact</a>
 </div>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
   
-
- <head>
-<style>
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #E3D7D4;
-}
-
-.flex-container > div {
-  background-color: #E3D7D4;
-  width: 500px;
-  margin: 10px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-}
-</style>
-</head>
-<body>
-<h1>Amisha Patel</h1> 
-
-<div class="flex-container">
-  <div><h2>LoanEDU</h2>
-	<img src="https://user-images.githubusercontent.com/68878927/104877935-cdf99700-590f-11eb-8739-84e2c6495975.png" alt="LoanEDU" width="50" height="100"></div>
-	<div><h2>Child Welfare</h2>
-  	<img src="https://user-images.githubusercontent.com/68878927/104878760-63495b00-5911-11eb-8db7-355d8d431926.png" alt="ChildWelfare" width="50" height="100"></div>
-   <div><h2>Women's Day Shelter</h2>
-  	<img src="https://user-images.githubusercontent.com/68878927/104879037-ef5b8280-5911-11eb-8d61-bdb98a6ad54e.png" alt="Women's Day" width="50" height="100"></div>  
   
-</div>
-
-
-</body>
-
-
-  
-</div>
-
-
-</body>
-
+  <article>
+    <h1>About Me</h1>
+    <p>Hi. My Name is Amisha Patel.</p>
+    <p>I am passionate about bringing technology into the classroom and in the hands of every student. As a former teacher I understand the unique challenges schools face in going from an analog to digital classroom settings. I enjoy analyzing research data to find gaps and problem solve. My skills include implementing frameworks such as Scrum to achieve goals, UX research, and prototyping.
+    <p>The ideal client would be an education technology company with the mission to create a product that can be seamless integration within classroom across the country.</p>
+</p>
+  </article>
+</section>
 
 <footer>
   <p>amisha91@gmail.com</p>
-  <p>Linkedin</p>
-  <p>phonenumber</p>
 </footer>
 
 </body>
