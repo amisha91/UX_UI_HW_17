@@ -1,20 +1,16 @@
-<!DOCTYPE html>
 <html>
 <body>
+    <h2>Amisha Patel</h2>
+        <p>In this example, x, y, and z are variables.</p>
 
-<h2>Amisha Patel</h2>
+        <p id="demo"></p>
 
-<p>In this example, x, y, and z are variables.</p>
-
-<p id="demo"></p>
-
-<script>
-var x = 5;
-var y = 6;
-var z = x + y;
-document.getElementById("demo").innerHTML =
-"The value of z is: " + z;
-</script>
-
+    <script>
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    document.getElementById("demo").innerHTML =
+    "The value of z is: " + z;
+    </script>
 </body>
 </html>
